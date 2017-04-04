@@ -1,0 +1,16 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transform($tr){
+	  -moz-transform: $tr;    /* Gecko */
+	  -o-transform: $tr;      /* Opera */
+	  -webkit-transform: $tr; /* Webkit */
+	  transform: $tr;         /* Standard */
+	  filter: FlipV;                 /* IE 6/7/8 */
+}
+@mixin scaleY($scale) {
+	@include transform(scaleY($scale));
+}

@@ -1,0 +1,360 @@
+/* responsive */
+@media screen and (max-width: 480px) {
+
+	/* menu  */
+	nav {
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  width: 100%;
+	}
+	.hamburger {
+	  display:block;
+	}
+	.side-menu {
+	  display: flex;
+	  position: relative;
+	  height: 100%;
+	  width: 100%;
+	  top: 140px;
+	  right: -100%;
+	  padding: 0;
+	  transition: 0.3s transform ease-in-out;
+	}
+	.side-menu ul {
+	  position: absolute;
+	  display: flex;
+	  flex-wrap: wrap;
+	  margin: 0;
+	  padding: 0;
+	  list-style-type: none;
+	  align-content: flex-start;
+	  width: 100%;
+	  text-align: center;
+	}
+	.side-menu ul li {
+	  display: flex;
+	  height: 30px;
+	  background: #ffffff;
+	  flex-basis: 100%;
+	  overflow: hidden; 
+	}
+	.side-menu ul li a:hover {
+	  height: 30px;
+	  background: $pink;
+	  color: white;
+	  overflow: hidden; 
+	}
+	.side-menu ul li a {
+	  align-items: center;
+	  width: 100%;
+	  height: 100%;
+	  background: #ffffff;
+	  text-decoration: none;
+	  box-sizing: border-box;
+	}
+	.hamburger:focus ~ .side-menu, .side-menu:hover {
+	  transform: translateX(-100%); 
+	}
+	/* end menu */
+
+	nav li a {
+		font-size: 110%;
+	}
+	#home{
+		p{
+			width: 90%;
+		}
+		li a{
+			color: white;
+			text-decoration: none;
+			height: 2em;
+			padding: 10px 15px;
+			white-space:nowrap;
+			font-size: 95%;
+		}
+		ul{
+			margin-top: 15px;
+		}
+		li:first-child a{
+			margin-right: 5px;
+		}
+	} 
+	.content{
+		top:5%;
+	}
+	.box, .cell{
+		margin-top:20px;
+		margin-left:5px;
+		width:45%;
+	}
+	.box p{
+		line-height: 150%;
+	}
+	.p1, .p2, .p3 {
+		width: 45%;
+		margin-left: 5px;
+		margin-bottom:5px;
+		height: 470px;
+	}
+	#pricing .pricingFooter{
+		div{
+			margin: 120px 10px;
+		}
+		div:first-child h4:after{
+			content: '\A Avarage weekly \A coffee drank';		
+		}
+		div:nth-child(2) h4:after{
+			content: '\A Avarage weekly \A lines of code';	
+		}
+		div:last-child h4:after{
+			content: '\A Avarage yearly \A happy clients';
+		}	
+	}
+	.ourteam{
+		width: 45%;
+		margin: 25px 5px;
+		height: 366px;	
+		a{
+			font-size: 0.9em;
+		}		
+	}
+	#contact{
+		.column p{
+			line-height: 1em;
+		}
+		h4{
+			margin: 2em auto;
+		}
+		h4 span{
+			line-height: 0.9em;
+		}
+		.about{
+			height: 200%;
+			h2{
+				margin-top: 70px;
+				margin-bottom: 40px;
+			}
+			.preFooter{
+				width: 49%;
+				margin-bottom: 0;
+			}
+			.preFooter:last-child{
+				width: 97%;
+				margin-top: 0px;
+				margin-bottom: 40px;
+			}
+		}
+		.bttnSubmit{
+			padding: 25px 0 25px 0;
+			width:100%;
+		}
+		.column{
+			padding: 0 10px;
+		}
+
+	}
+	footer{
+		text-align: center;
+		a{
+			font-size: 2em;
+			width: 20%;
+			margin-left:0;
+		}
+		p{
+		 	position:relative;
+		 	line-height: 50px;
+		 	right: 0;
+		}
+		div{
+			line-height: 50px;
+			height: 50px;
+		}
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+	/* menu  */
+	nav {
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  width: 40%;
+	}
+	.hamburger {
+	  display:block;
+	}
+	.side-menu {
+	  display: flex;
+	  position: relative;
+	  height: 100%;
+	  width: 100%;
+	  top: 140px;
+	  right: -100%;
+	  padding: 0;
+	  transition: 0.3s transform ease-in-out;
+	}
+	.side-menu ul {
+	  position: absolute;
+	  display: flex;
+	  flex-wrap: wrap;
+	  margin: 0;
+	  padding: 0;
+	  list-style-type: none;
+	  align-content: flex-start;
+	  width: 100%;
+	  text-align: center;
+	}
+	.side-menu ul li {
+	  display: flex;
+	  height: 30px;
+	  background: #ffffff;
+	  flex-basis: 100%;
+	  overflow: hidden; 
+	}
+	.side-menu ul li a:hover {
+	  height: 30px;
+	  background: $pink;
+	  color: white;
+	  overflow: hidden; 
+	}
+	.side-menu ul li a {
+	  align-items: center;
+	  width: 100%;
+	  height: 100%;
+	  background: #ffffff;
+	  text-decoration: none;
+	  box-sizing: border-box;
+	}
+	.hamburger:focus ~ .side-menu, .side-menu:hover {
+	  transform: translateX(-100%); 
+	}
+	/* end menu */
+
+	#home{
+		p {
+			width: 90%;
+		}
+		li a{
+			color: white;
+			text-decoration: none;
+			height: 2em;
+			padding: 10px 20px;
+			white-space:nowrap;
+			font-size: 95%;
+		}
+		ul{
+			margin-top: 20px;
+		}
+		li:first-child a{
+			margin-right: 10px;
+		}
+	} 
+	.content{
+		top:5%;
+	}
+	.box, .cell{
+		margin-top:20px;
+		margin-left:5px;
+		width:45%;
+	}
+	.box p{
+		line-height: 150%;
+	}
+	.p1, .p2, .p3 {
+		width: 45%;
+		margin-left: 5px;
+		margin-bottom:5px;
+		height: 470px;
+	}
+	#pricing .pricingFooter{
+
+			div{
+				margin: 120px 10px;
+			}
+
+			div:first-child h4:after{
+				content: '\A Avarage weekly \A coffee drank';		
+			}
+			div:nth-child(2) h4:after{
+				content: '\A Avarage weekly \A lines of code';	
+			}
+			div:last-child h4:after{
+				content: '\A Avarage yearly \A happy clients';
+			}	
+	}
+	.ourteam{
+
+		width: 45%;
+		margin: 25px 5px;
+		height: 366px;	
+	}
+	#contact{
+		h4{
+			margin: 2em auto;
+		}
+
+		h4 span{
+			line-height: 0.9em;
+		}
+		.bttnSubmit{
+			padding: 25px 0 25px 0;
+			width:100%;
+		}
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 989px) {
+	
+	nav{
+		width: 53%;
+		word-spacing: 0.4em;
+	}
+	nav li a {
+		font-size: 100%;
+	}
+	#home{
+
+		p{
+		width: 60%;
+		}
+
+		li a{
+			color: white;
+			text-decoration: none;
+			height: 3em;
+			padding: 14px 60px;
+			white-space:nowrap;
+		}
+	} 
+	.content{
+
+		top:10%;
+
+	}
+	.ourteam{
+
+		width: 23%;
+		margin: 25px 5px;
+		//height: 366px;	
+	}
+	#pricing .pricingFooter{
+
+			div{
+				margin: 120px 10px;
+			}
+
+			div:first-child h4:after{
+				content: '\A Avarage weekly \A coffee drank';		
+			}
+			div:nth-child(2) h4:after{
+				content: '\A Avarage weekly \A lines of code';	
+			}
+			div:last-child h4:after{
+				content: '\A Avarage yearly \A happy clients';
+			}	
+	}
+	
+}
+@media screen and (min-width: 990px) {
+
+}
